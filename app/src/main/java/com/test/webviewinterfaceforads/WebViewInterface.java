@@ -39,7 +39,8 @@ public class WebViewInterface {
     }
 
     void loadGame(){ // wait for interstitial ads to be loaded
-        webView.loadUrl("file:///android_asset/ninja-ranmaru/index.html"); // load game from local
+        webView.loadUrl(gameUrl);
+        //webView.loadUrl("file:///android_asset/ninja-ranmaru/index.html"); // load game from local
         //webView.loadUrl("https://html5.gamedistribution.com/405c00612981466cbc5d9dcef4214811/"); // sample game
         //webView.loadUrl("http://10.0.2.2/index.html"); // for run on emulator emulator ip should be 10.0.2.2
     }
